@@ -12,8 +12,8 @@ Phím tắt copy
 
 <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>V</kbd>
 
-```sequence
+__sequence__
 Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!
-```
+
