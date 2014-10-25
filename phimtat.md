@@ -3,7 +3,8 @@ Các phím tắt hay dùng
 
 # Trên Terminal của Ubuntu
 - Phím tắt gọi terminal
-`<kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>`
+
+<kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>
 
 - Phím tắt copy
 ```sh
