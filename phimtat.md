@@ -2,19 +2,16 @@ Các phím tắt hay dùng
 ====================
 
 # Trên Terminal của Ubuntu
-Phím tắt gọi terminal
+
+__Phím tắt gọi terminal__
+
 > <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>
 
-Phím tắt copy
+__Phím tắt copy__
+
 > <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>C</kbd>
 
- Phím tắt paste
+ __Phím tắt paste__
 
-<kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>V</kbd>
-
-__sequence__
-
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
+> <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>V</kbd>
 
