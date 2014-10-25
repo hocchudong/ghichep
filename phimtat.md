@@ -6,3 +6,11 @@ Các phím tắt hay dùng
 ```sh
 CTL + ALT + t
 ```
+- Phím tắt copy
+```sh
+CTL + ALT + C
+```
+- Phím tắt paste
+```sh
+CTL + ALT + V
+```
