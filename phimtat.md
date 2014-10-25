@@ -5,6 +5,9 @@ Các phím tắt hay dùng
 
 __Phím tắt gọi terminal__
 
+> <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>
+
+__Phím tắt mở nhiều tab terminal trong 1 cửa sổ__
 > <kbd>CTL</kbd> + <kbd>SHIFT</kbd> + <kbd>t</kbd>
 
 __Phím tắt copy__
