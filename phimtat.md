@@ -2,7 +2,7 @@ Các phím tắt hay dùng
 ====================
 
 # Trên Terminal của Ubuntu
-- Phím tắt gọi terminal
+Phím tắt gọi terminal
 
 <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>
 
