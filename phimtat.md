@@ -9,6 +9,6 @@ Phím tắt copy
 > <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>C</kbd>
 
  Phím tắt paste
-
+```
 <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>V</kbd>
-
+```
