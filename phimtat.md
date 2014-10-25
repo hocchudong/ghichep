@@ -5,13 +5,13 @@ Các phím tắt hay dùng
 
 __Phím tắt gọi terminal__
 
-> <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>t</kbd>
+> <kbd>CTL</kbd> + <kbd>SHIFT</kbd> + <kbd>t</kbd>
 
 __Phím tắt copy__
 
-> <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>C</kbd>
+> <kbd>CTL</kbd> + <kbd>SHIFT</kbd> + <kbd>C</kbd>
 
  __Phím tắt paste__
 
-> <kbd>CTL</kbd> + <kbd>ALT</kbd> + <kbd>V</kbd>
+> <kbd>CTL</kbd> + <kbd>SHIFT</kbd> + <kbd>V</kbd>
 
