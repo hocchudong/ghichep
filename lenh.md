@@ -21,4 +21,12 @@ hostname "Cen65-monitor-T7"
 - Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng: [THAM KHẢO](http://etherealmind.com/tech-notes-ping-sweep-ip-subnet/)
 ```sh
 for i in `seq 1 255`; do ping -c 1 192.168.1.$i | tr \\n ' ' | awk '/1 received/ {print $2}'; done 
+
+hoặc
+
+for i in {1..255}; do timeout 1 ping -c 1 172.16.69.$i >/dev/null && echo $_; done
+
+hoặc
+
+for i in {1..255}; do  ping -c 1 -t 1 172.16.69.$i >/dev/null && echo $_; done
 ```
