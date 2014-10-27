@@ -17,3 +17,8 @@ hostname -F /etc/hostname
 echo "HOSTNAME=Cen65-monitor-T7" >> /etc/sysconfig/network
 hostname "Cen65-monitor-T7"
 ```
+
+- Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng: [THAM KHẢP](http://etherealmind.com/tech-notes-ping-sweep-ip-subnet/)
+```sh
+for i in `seq 1 255`; do ping -c 1 192.168.1.$i | tr \\n ' ' | awk '/1 received/ {print $2}'; done 
+```
