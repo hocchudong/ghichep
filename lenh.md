@@ -4,7 +4,7 @@ Các lệnh hay dùng
 * [Lệnh update sau khi cài đặt] (#update-upgrade-dist-upgrade)
 * [Lệnh đổi tên máy nhanh ] (#chang-names)
 * [Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng] (#check-range-ip)
-
+* [Lệnh đếm số lần truy cập vào Apache trong linux] (#count-access-ip)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -40,6 +40,7 @@ hoặc
 for i in {1..255}; do  ping -c 1 -t 1 172.16.69.$i >/dev/null && echo $_; done
 ```
 
+<a name="count-access-ip"></a>
 ### Lệnh đếm số lần truy cập vào Apache trong linux: [Tham khảo](http://frustratedtech.com/post/30324903133/count-ip-addresses-in-apache-access-logs)
 ```sh
 # From CuongLM
