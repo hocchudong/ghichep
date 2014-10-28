@@ -26,8 +26,12 @@ hostname "Cen65-monitor-T7"
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <a name="check-range-ip"> </a>
 ### Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng: [THAM KHẢO](http://etherealmind.com/tech-notes-ping-sweep-ip-subnet/)
+=======
+###Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng: [THAM KHẢO](http://etherealmind.com/tech-notes-ping-sweep-ip-subnet/)
+>>>>>>> origin/master
 =======
 ###Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng: [THAM KHẢO](http://etherealmind.com/tech-notes-ping-sweep-ip-subnet/)
 >>>>>>> origin/master
