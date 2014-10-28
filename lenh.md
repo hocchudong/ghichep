@@ -30,3 +30,12 @@ hoặc
 
 for i in {1..255}; do  ping -c 1 -t 1 172.16.69.$i >/dev/null && echo $_; done
 ```
+
+- Lệnh đếm số lần truy cập vào Apache trong linux: [Tham khảo](http://frustratedtech.com/post/30324903133/count-ip-addresses-in-apache-access-logs)
+```sh
+# From CuongLM
+awk '{print $1}' access.log | sort | uniq -c | sort -n
+
+hoặc
+cat access.log | awk '{print $1}' | sort | uniq -c | sort -n
+```
