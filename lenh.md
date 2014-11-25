@@ -53,7 +53,8 @@ cat access.log | awk '{print $1}' | sort | uniq -c | sort -n
 
 <a name="set-timezone"> </a>
 ### Lệnh đặt timezone
-
+Trước khi setup: http://i.imgur.com/Ws23zs2.png
 ```sh
 sudo timedatectl set-timezone  Asia/Ho_Chi_Minh
 ```
+Sau khi setup : http://i.imgur.com/R7ENZ7H.png
