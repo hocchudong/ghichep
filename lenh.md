@@ -5,6 +5,7 @@ Các lệnh hay dùng
 * [Lệnh đổi tên máy nhanh ] (#chang-names)
 * [Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng] (#check-range-ip)
 * [Lệnh đếm số lần truy cập vào Apache trong linux] (#count-access-ip)
+* [Lệnh đặt timezone](#set-timezone)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -48,4 +49,11 @@ awk '{print $1}' access.log | sort | uniq -c | sort -n
 
 hoặc
 cat access.log | awk '{print $1}' | sort | uniq -c | sort -n
+```
+
+<a name="set-timezone"> </a>
+### Lệnh đặt timezone
+
+```sh
+sudo timedatectl set-timezone  Asia/Ho_Chi_Minh
 ```
