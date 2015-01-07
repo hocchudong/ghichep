@@ -58,3 +58,9 @@ Trước khi setup: http://i.imgur.com/Ws23zs2.png
 sudo timedatectl set-timezone  Asia/Ho_Chi_Minh
 ```
 Sau khi setup : http://i.imgur.com/R7ENZ7H.png
+
+
+### Lệnh thay chuỗi nhanh trong VIM
+```sh
+:%s/192.168.1/172.16.69/g
+```
