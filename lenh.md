@@ -70,3 +70,8 @@ Sau khi setup : http://i.imgur.com/R7ENZ7H.png
 ```sh
 :%s/192.168.1/172.16.69/g
 ```
+<a name="add-repo-policy"></a>
+### Lệnh add repo policy server cho client
+```sh
+echo 'Acquire::http { Proxy "http://172.16.69.21:3142"; };' >  /etc/apt/apt.conf.d/02proxy
+```
