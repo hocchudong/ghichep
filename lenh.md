@@ -1,11 +1,14 @@
 Các lệnh hay dùng
 ==================
 
+
 * [Lệnh update sau khi cài đặt] (#update-upgrade-dist-upgrade)
 * [Lệnh đổi tên máy nhanh ] (#chang-names)
 * [Lệnh dùng để kiểm tra các ip đã sử dụng trong một dải mạng] (#check-range-ip)
 * [Lệnh đếm số lần truy cập vào Apache trong linux] (#count-access-ip)
 * [Lệnh đặt timezone](#set-timezone)
+* [Các lệnh làm việc với VIM](#VIM)
+* [Lệnh thay chuỗi trong VIM](#thay-chuoi-vim)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -59,7 +62,10 @@ sudo timedatectl set-timezone  Asia/Ho_Chi_Minh
 ```
 Sau khi setup : http://i.imgur.com/R7ENZ7H.png
 
+<a name="VIM"> </a>
+## Các lệnh làm việc với VIM
 
+<a name="thay-chuoi-vim"> </a>
 ### Lệnh thay chuỗi nhanh trong VIM
 ```sh
 :%s/192.168.1/172.16.69/g
