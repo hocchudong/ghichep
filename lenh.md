@@ -9,6 +9,7 @@ Các lệnh hay dùng
 * [Lệnh đặt timezone](#set-timezone)
 * [Các lệnh làm việc với VIM](#VIM)
 * [Lệnh thay chuỗi trong VIM](#thay-chuoi-vim)
+* [Lệnh add repo policy](#add-repo-policy)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
