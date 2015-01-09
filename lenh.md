@@ -9,7 +9,7 @@ Các lệnh hay dùng
 * [Lệnh đặt timezone](#set-timezone)
 * [Các lệnh làm việc với VIM](#VIM)
 * [Lệnh thay chuỗi trong VIM](#thay-chuoi-vim)
-* [Lệnh add repo policy](#add-repo-policy)
+* [Lệnh add repo proxy](#add-repo-proxy)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -71,8 +71,8 @@ Sau khi setup : http://i.imgur.com/R7ENZ7H.png
 ```sh
 :%s/192.168.1/172.16.69/g
 ```
-<a name="add-repo-policy"></a>
-### Lệnh add repo policy server cho client
+<a name="add-repo-proxy"></a>
+### Lệnh add repo proxy server cho client
 ```sh
 echo 'Acquire::http { Proxy "http://172.16.69.21:3142"; };' >  /etc/apt/apt.conf.d/02proxy
 ```
