@@ -10,6 +10,7 @@ Các lệnh hay dùng
 * [Các lệnh làm việc với VIM](#VIM)
 * [Lệnh thay chuỗi trong VIM](#thay-chuoi-vim)
 * [Lệnh add repo proxy](#add-repo-proxy)
+* [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -75,4 +76,10 @@ Sau khi setup : http://i.imgur.com/R7ENZ7H.png
 ### Lệnh add repo proxy server cho client
 ```sh
 echo 'Acquire::http { Proxy "http://172.16.69.21:3142"; };' >  /etc/apt/apt.conf.d/02proxy
+```
+<a name="ssh"></a>
+### Lệnh tăng tốc độ truy cập ssh vào server
+```
+sed -i 's/GSSAPIAuthentication yes/GSSAPIAuthentication no/g' /etc/ssh/sshd_config
+echo "UseDNS no" >> /etc/ssh/sshd_config
 ```
