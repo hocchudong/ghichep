@@ -5,6 +5,17 @@ http://www.shellhacks.com/en/HowTo-Install-VMware-Tools-on-CentOS-RHEL
 ```
 
 ### Cai dat vmware  tools cho ubuntu
+
+- Cách 1:
+```sh
+sudo apt-get update
+sudo apt-get install open-vm-tools
+
+Tham khảo
+http://partnerweb.vmware.com/GOSIG/Ubuntu_14_04.html 
+```
+
+- Cách 2:
 ```sh
 apt-get update -y && apt-get upgrade -y
 ```
