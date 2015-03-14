@@ -1,3 +1,9 @@
+- Dành cho Centos 
+```sh
+http://www.scriptsmy.com/how-to-install-open-vm-tools-in-centos-6-6/
+http://www.shellhacks.com/en/HowTo-Install-VMware-Tools-on-CentOS-RHEL
+```
+
 ### Cai dat vmware  tools cho ubuntu
 ```sh
 apt-get update -y && apt-get upgrade -y
