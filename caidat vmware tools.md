@@ -1,7 +1,6 @@
 ### Cai dat vmware  tools cho ubuntu
 ```sh
-sudo apt-get update
-sudo apt-get upgrade
+apt-get update && apt-get upgrade
 ```
 3) Create the mount point
 ```sh
