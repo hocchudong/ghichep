@@ -11,6 +11,7 @@ Các lệnh hay dùng
 * [Lệnh thay chuỗi trong VIM](#thay-chuoi-vim)
 * [Lệnh add repo proxy](#add-repo-proxy)
 * [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
+* [Lệnh kiểm tra trạng thái của các dịch vụ](#dichvu)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -79,7 +80,16 @@ echo 'Acquire::http { Proxy "http://172.16.69.21:3142"; };' >  /etc/apt/apt.conf
 ```
 <a name="ssh"></a>
 ### Lệnh tăng tốc độ truy cập ssh vào server
-```
+```sh
 sed -i 's/GSSAPIAuthentication yes/GSSAPIAuthentication no/g' /etc/ssh/sshd_config
 echo "UseDNS no" >> /etc/ssh/sshd_config
+```
+
+<a name="dichvu"></a>
+### Lệnh kiểm tra trạng thái dịch vụ
+```sh
+root@u14:~# initctl list | grep ssh
+ssh start/running, process 1231
+root@u14:~# initctl list | grep ufw
+ufw start/running
 ```
