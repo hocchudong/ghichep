@@ -12,20 +12,23 @@ vi +9  etc/passwd
 ```
 
 ###  Mở file và nhảy đến dòng có chứa ký tự chỉ định
-```sh
 Cú pháp
+```sh
 vi   +/tu_khoa   file_can_mo
+```
 
-Ví dụ nhảy tới dòng có từ khóa là `mail` trong file etc/passwd
+- Ví dụ nhảy tới dòng có từ khóa là `mail` trong file etc/passwd
+```sh
 vi +/mail  etc/passwd
 ```
 
 ###  Mở file và nhảy đến dòng cuối cùng của file
-```sh
 Cú pháp
+```sh
 vi   +  file_can_mo
-
-Ví dụ nhảy tới dòng cuối cùng trong file etc/passwd
+```
+- Ví dụ nhảy tới dòng cuối cùng trong file etc/passwd
+```sh
 vi + etc/passwd
 ```
 
