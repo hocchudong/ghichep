@@ -12,7 +12,7 @@ Các lệnh hay dùng
 * [Lệnh add repo proxy](#add-repo-proxy)
 * [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
 * [Lệnh kiểm tra trạng thái của các dịch vụ](#dichvu)
-* [Lệnh tìm file có nội dung cho trước](#grep)
+* [Lệnh tìm file có nội dung chứa từ khóa cần tìm](#grep)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -96,7 +96,7 @@ ufw start/running
 ```
 
 <a name="grep"></a>
-### Tìm file có nội dung cho trước
+### Lệnh tìm file có nội dung chứa từ khóa cần tìm
 ```
 grep -Rin <từ khóa> <đường dẫn>
 ```
