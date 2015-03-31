@@ -12,6 +12,7 @@ Các lệnh hay dùng
 * [Lệnh add repo proxy](#add-repo-proxy)
 * [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
 * [Lệnh kiểm tra trạng thái của các dịch vụ](#dichvu)
+* [Lệnh tìm file có nội dung cho trước](#grep)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -92,4 +93,10 @@ root@u14:~# initctl list | grep ssh
 ssh start/running, process 1231
 root@u14:~# initctl list | grep ufw
 ufw start/running
+```
+
+<a name="grep"></a>
+### Tìm file có nội dung cho trước
+```
+grep -Rin <từ khóa> <đường dẫn>
 ```
