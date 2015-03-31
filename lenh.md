@@ -12,7 +12,7 @@ Các lệnh hay dùng
 * [Lệnh add repo proxy](#add-repo-proxy)
 * [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
 * [Lệnh kiểm tra trạng thái của các dịch vụ](#dichvu)
-* [Lệnh tìm file có nội dung chứa từ khóa cần tìm](#grep)
+* [Lệnh tìm tất cả các file có nội dung chứa từ khóa cần tìm](#grep)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -96,7 +96,16 @@ ufw start/running
 ```
 
 <a name="grep"></a>
-### Lệnh tìm file có nội dung chứa từ khóa cần tìm
+### Lệnh tìm tất cả các file có nội dung chứa từ khóa cần tìm
 ```
 grep -Rin <từ khóa> <đường dẫn>
 ```
+VD: Tìm file tất cả các file có nội dung chứa từ khóa "nova" trong /etc/neutron
+```
+grep -Rin "nova" /etc/neutron
+```
+Kết quả tìm kiếm:
+
+<img class="image__pic js-image-pic" src="http://i.imgur.com/nMMb860.png" alt="" id="screenshot-image">
+
+
