@@ -119,5 +119,5 @@ sed -i '\/246/i 888888' test.txt
 ```
 Xóa dòng trống
 ```
-sed '/^$/d' filename
+sed -i '/^[ \t]*$/d' test.txt
 ```
