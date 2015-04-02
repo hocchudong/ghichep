@@ -108,4 +108,16 @@ Kết quả tìm kiếm:
 
 <img class="image__pic js-image-pic" src="http://i.imgur.com/nMMb860.png" alt="" id="screenshot-image">
 
-
+### Lệnh chèn 1 dòng vào trước, sau 1 dòng, xóa dòng trống trong 1 file
+chèn vào sau 1 dòng
+```
+sed -i '\/246/a 888888' test.txt
+```
+chèn vào trước 1 dòng
+```
+sed -i '\/246/i 888888' test.txt
+```
+Xóa dòng trống
+```
+sed '/^$/d' filename
+```
