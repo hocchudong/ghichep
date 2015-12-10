@@ -13,6 +13,7 @@ Các lệnh hay dùng
 * [Lệnh tăng tốc đố truy cập ssh vào server](#ssh)
 * [Lệnh kiểm tra trạng thái của các dịch vụ](#dichvu)
 * [Lệnh tìm tất cả các file có nội dung chứa từ khóa cần tìm](#grep)
+* [Lệnh tìm các gói cần upgrade trong Ubuntu](#packageupdate)
 
 <a name="update-upgrade-dist-upgrade"></a>
 ### Lệnh update sau khi cài đặt 
@@ -120,4 +121,18 @@ sed -i '\/246/i 888888' test.txt
 Xóa dòng trống
 ```
 sed -i '/^[ \t]*$/d' test.txt
+```
+
+<a name="packageupdate"></a>
+### Lệnh tìm các gói cần upgrade trong Ubuntu
+```
+dpkg --get-selections | xargs apt-cache policy {} | grep -1 Installed | sed -r 's/(:|Installed: |Candidate: )//' | uniq -u | tac | sed '/--/I,+1 d' | tac | sed '$d' | sed -n 1~2p
+
+
+hoặc
+
+aptitude search '~U'
+
+
+Tham khảo: http://askubuntu.com/questions/99834/how-do-you-see-what-packages-are-available-for-update
 ```
