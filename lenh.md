@@ -138,7 +138,7 @@ Tham khảo: http://askubuntu.com/questions/99834/how-do-you-see-what-packages-a
 ```
 
 <a name="egrep-filter"></a>
-### Hiển thị các dòng không chứa đấu $ và # trong 1 file 
+### Chỉ hiển thị các dòng không chứa đấu # hoặc dòng trống ($ để lọc các dòng trống)
 
 ```sh
 egrep -v '^$|^#' /etc/collectd/collectd.conf
