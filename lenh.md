@@ -136,3 +136,16 @@ aptitude search '~U'
 
 Tham khảo: http://askubuntu.com/questions/99834/how-do-you-see-what-packages-are-available-for-update
 ```
+
+<a name="egrep-filter"></a>
+### Hiển thị các dòng không chứa đấu $ và # trong 1 file 
+
+```sh
+egrep -v '^$|^#' /etc/collectd/collectd.conf
+
+hoặc 
+
+cat /etc/collectd/collectd.conf | grep -v ^# | grep -v ^$
+```
+
+
