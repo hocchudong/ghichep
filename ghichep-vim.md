@@ -38,3 +38,12 @@ vi + etc/passwd
 ```sh
 :%s/192.168.1/172.16.69/g
 ```
+
+### Xóa các dòng khi biết số thứ tự dòng
+```sh
+Sử dụng cú pháp sau: :[dong_bat_dau], [dong_ket_thuc]d
+
+Ví dụ xóa từ dòng 5 tới dòng 10 trong vi/vim sử dụng lệnh sau
+:5,10d
+```
+
