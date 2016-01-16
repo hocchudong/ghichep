@@ -44,6 +44,7 @@ vi + etc/passwd
 Sử dụng cú pháp sau: :[dong_bat_dau], [dong_ket_thuc]d
 
 Ví dụ xóa từ dòng 5 tới dòng 10 trong vi/vim sử dụng lệnh sau (dùng lệnh ":set nu" để hiển thị số thứ tự dòng trong vim)
+
 :5,10d
 ```
 
