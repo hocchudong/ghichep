@@ -30,14 +30,14 @@
     
 - Trong quá trình cài đặt lựa chọn mặc định các thông số.
     
-### Cấu hình
+### Cấu hình `postfix`
 
 - Sao lưu file 
     ```sh
     cp /etc/postfix/main.cf /etc/postfix/main.cf.orig  
     ```
 
-- Chèn thêm 6 dòng dưới vào file. Nếu dòng nào có rồi thì thay thế.
+- Chèn thêm các dòng dưới vào file. Nếu dòng nào chưa có thì chèn mới, chưa đúng thì thay giá trị cho đúng.
     ```sh
     smtp_use_tls=yes
     smtp_sasl_auth_enable = yes
@@ -48,6 +48,8 @@
     relayhost = [smtp.gmail.com]:587
     ```
 
+- Lưu ý: File `/etc/postfix/main.cf` thay đổi dòng `smtpd_use_tls=yes` thành `smtp_use_tls=yes` (bỏ chữ `d` đi)
+    
 - Tạo file `/etc/postfix/sasl_passwd` với nội dung sau
     ```sh
     [smtp.gmail.com]:587    tai_khoan_gui@gmail.com:mat_khau
@@ -59,10 +61,18 @@
     sudo postmap /etc/postfix/sasl_passwd
     ```
 
-- Khởi động lại postfix
+- Khởi động lại postfix 
     ```sh
-    sudo /etc/init.d/postfix reload
+    service postfix reload
     ```
+    
+    hoặc
+    
+    ```sh
+    service postfix restart
+    ```
+
+### Khai báo trên `tai_khoan_gui@gmail` để `postfix` sử dụng được
 
 - Truy cập vào link dưới và bật chế độ `Less secure apps`
 
@@ -70,18 +80,27 @@
     https://support.google.com/accounts/answer/6010255
     ```
 
-    - Tham khảo ảnh
+- Tham khảo ảnh
     
-        ```sh
-        http://prntscr.com/c9uxke
-        ```
-    
-- Kiểm tra việc gửi mail
     ```sh
-    echo “Testing Gmail SMTP service” | mail -s “Test message from GMAIL” tai_khoan_nhan@domain
+    http://prntscr.com/c9uxke
+    ```
+    
+### Kiểm tra việc gửi mail
+
+- Dùng lệnh dưới để gửi thử
+
+    ```sh
+    echo "Test mail from postfix" | mail -s "Test Postfix" tai_khoan_nhan@domain
     ```
 
 - Kiểm tra mail của tài khoản `tai_khoan_nhan@domain`
+- Kết quả: http://prntscr.com/c9ve78
+
+
+- Trong hướng dẫn này sử dụng:
+    - Email gửi: vnptcloud@gmail.com
+    - Email nhận: ttcong@vnpt.vn
 
 ## Tham khảo:
 - https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/
@@ -89,3 +108,12 @@
 
 ## HẾT.
 
+### Draft
+HOST_NAME=`hostname`
+debconf-set-selections <<< "postfix postfix/mailname string $HOST_NAME"
+debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
+
+
+- Bỏ comment dòng 17 trong file `/etc/postfix/master.cf`
+
+http://prntscr.com/c9vb9x
