@@ -22,10 +22,12 @@
 ### Cài đặt 
 
 - Update và cài đặt các gói
+
     ```sh
     apt-get -y update
     apt-get -y install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
     ```
+    
 - Trong quá trình cài đặt lựa chọn mặc định các thông số.
     
 ### Cấu hình
@@ -69,10 +71,11 @@
     ```
 
     - Tham khảo ảnh
+    
         ```sh
         http://prntscr.com/c9uxke
         ```
- 
+    
 - Kiểm tra việc gửi mail
     ```sh
     echo “Testing Gmail SMTP service” | mail -s “Test message from GMAIL” tai_khoan_nhan@domain
