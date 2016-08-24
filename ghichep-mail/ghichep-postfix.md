@@ -62,14 +62,15 @@
     ```
 
 - Truy cập vào link dưới và bật chế độ `Less secure apps`
+
     ```sh
     https://support.google.com/accounts/answer/6010255
     ```
 
- - Tham khảo ảnh
-     ```sh
-     http://prntscr.com/c9uxke
-     ```
+    - Tham khảo ảnh
+        ```sh
+        http://prntscr.com/c9uxke
+        ```
  
 - Kiểm tra việc gửi mail
     ```sh
