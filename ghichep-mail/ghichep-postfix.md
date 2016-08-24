@@ -26,7 +26,8 @@
     apt-get -y update
     apt-get -y install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
     ```
-
+- Trong quá trình cài đặt lựa chọn mặc định các thông số.
+    
 ### Cấu hình
 
 - Sao lưu file 
